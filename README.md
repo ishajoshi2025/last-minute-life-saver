@@ -194,12 +194,11 @@ Built for **Vibe2Ship 2026** — Google for Developers × Coding Ninjas
 │   ├── useDeadlineTheme.ts   # Urgency theme switcher
 │   └── useLocalStorage.ts    # Persistent state
 └── lib/
-├── parsePlan.ts          # Markdown → task objects
-├── calendarExport.ts     # Google Calendar + ICS
-├── generateBattleCard.ts # HTML Canvas image gen
-├── riskScore.ts          # Risk calculation logic
-└── themes.ts             # Theme config + types
-
+    ├── parsePlan.ts          # Markdown → task objects
+    ├── calendarExport.ts     # Google Calendar + ICS
+    ├── generateBattleCard.ts # HTML Canvas image gen
+    ├── riskScore.ts          # Risk calculation logic
+    └── themes.ts             # Theme config + types
 ---
 
 ## 👤 Author
