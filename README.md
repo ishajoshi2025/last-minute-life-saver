@@ -161,6 +161,45 @@ Built for **Vibe2Ship 2026** — Google for Developers × Coding Ninjas
 
 ## 📁 Project Structure
 
+
+├── app/
+│   ├── page.tsx              # Main application
+│   ├── layout.tsx            # Root layout with fonts
+│   ├── globals.css           # Design system + 7 themes
+│   └── api/
+│       ├── generate/         # Core plan generation
+│       ├── replan/           # Agentic re-planning
+│       ├── nudge/            # Drift detector messages
+│       ├── chat/             # Conversational agent
+│       ├── extract-from-image/ # Gemini Vision
+│       ├── clean-voice/      # Voice input cleanup
+│       ├── negotiate/        # Extension email drafting
+│       ├── win-message/      # Completion celebration
+│       ├── card-tagline/     # Battle card generation
+│       └── prioritize/       # Multi-deadline advisor
+├── components/
+│   ├── TaskCard.tsx          # Interactive task item
+│   ├── PlanChat.tsx          # Conversational agent UI
+│   ├── NudgeNotification.tsx # Drift detector popup
+│   ├── RiskGauge.tsx         # Live risk score
+│   ├── FocusMode.tsx         # Zen focus overlay
+│   ├── ThemePicker.tsx       # 7-theme selector
+│   ├── NegotiatorModal.tsx   # Extension email modal
+│   ├── LandingHero.tsx       # Landing page
+│   └── SkeletonPlan.tsx      # Loading state
+├── hooks/
+│   ├── useDriftDetector.ts   # Idle detection agent
+│   ├── useVoiceInput.ts      # Web Speech API
+│   ├── useTheme.ts           # Theme management
+│   ├── useDeadlineTheme.ts   # Urgency theme switcher
+│   └── useLocalStorage.ts    # Persistent state
+└── lib/
+├── parsePlan.ts          # Markdown → task objects
+├── calendarExport.ts     # Google Calendar + ICS
+├── generateBattleCard.ts # HTML Canvas image gen
+├── riskScore.ts          # Risk calculation logic
+└── themes.ts             # Theme config + types
+
 ---
 
 ## 👤 Author
